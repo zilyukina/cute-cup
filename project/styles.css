@@ -405,3 +405,6 @@ body {
         left: 129px;
     }
 }
+.is-hidden {
+    display: none;
+}
