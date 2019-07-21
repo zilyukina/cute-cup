@@ -13,7 +13,7 @@ body {
     &__content {
         width: 600px;
         height: 600px;
-        background: white;
+        background: #F9D3C0;
         position: relative;
     }
 }
@@ -360,5 +360,48 @@ body {
             top: -3px;
             content: '';
         }
+    }
+}
+.spots {
+    background: #F7CDBB;
+    width: 140px;
+    height: 133px;
+    border-radius: 100%;
+    transform: skew(8deg, 0deg);
+    position: absolute;
+    top: 144px;
+    left: 63px;
+
+    &:before {
+        content: '';
+        width: 188px;
+        height: 133px;
+        border-radius: 100%;
+        transform: skew(-4deg, -5deg);
+        position: absolute;
+        top: 182px;
+        left: -17px;
+        background: inherit;
+    }
+    &:after {
+        content: '';
+        width: 291px;
+        height: 152px;
+        border-radius: 126px;
+        transform: skew(-18deg, -6deg) rotate(-26deg);
+        position: absolute;
+        top: 118px;
+        left: 201px;
+        background: inherit;
+    }
+
+    &-2 {
+        background: #F7CDBB;
+        width: 362px;
+        height: 327px;
+        border-radius: 100%;
+        position: absolute;
+        top: 160px;
+        left: 129px;
     }
 }
