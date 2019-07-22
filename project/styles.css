@@ -316,7 +316,7 @@ body {
         width: 33px;
         left: 0;
     }
-    
+
     &:after {
         width: 350px;
         right:0;
@@ -339,6 +339,7 @@ body {
         z-index: 1;
         left: 41px;
         top: 32px;
+        animation: eyes 5s infinite;
 
         &:before {
             content: '';
@@ -361,6 +362,7 @@ body {
         z-index: 1;
         left: 75px;
         top: 48px;
+        animation: mouth 5s infinite;
 
         &:after {
             content: '';
@@ -384,6 +386,29 @@ body {
             content: '';
         }
     }
+    &-blush {
+        position: absolute;
+        width: 48px;
+        height: 19px;
+        background: radial-gradient( #ff7ec6 0% , transparent 50%);
+        left: 10px;
+        top: 36px;
+        border-radius: 100%;
+        z-index: 2;
+        animation: blush 5s infinite;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 19px;
+            background: inherit;
+            left: 104px;
+            top: 0;
+            border-radius: 100%;
+            z-index: 2;
+        }
+    }
 }
 .like {
     position: absolute;
@@ -398,6 +423,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 41px;
+    animation: heart 3.5s infinite;
 
     &:before {
         content: '';
@@ -408,5 +434,41 @@ body {
         border-left: 17px solid transparent;
         border-right: 17px solid transparent;
         border-top: 20px solid #DC6D64;
+    }
+}
+
+@keyframes eyes {
+    0%, 80% {
+        transform: translate(0px, 0px) scale(1, 1);
+    }
+    24%, 60% {
+        transform: translate(-3px, -11px) scale(1.05, 0.5);
+    }
+}
+@keyframes mouth {
+    0%,80% {
+        transform: translate(0px, 0px) scale(1, 1);
+    }
+    15%, 55% {
+        transform: translate(-1px, -15px) scale(1.1, 0.9);
+    }
+}
+@keyframes blush {
+    0%, 20%, 75%, 100% {
+        opacity: 0;
+    }
+    50% {
+       opacity: 0.4;
+    }
+}
+@keyframes heart {
+    0%, 13%, 23%, 100%  {
+        font-size: 41px;
+    }
+    1% {
+        font-size: 50px;
+    }
+    17% {
+        font-size: 55px;
     }
 }
