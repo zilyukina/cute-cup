@@ -1,4 +1,4 @@
-# Pure CSS animation
+# Cute Cup animation
 
 Good days start with coffee :) <br>
 Watch live [demo](https://codepen.io/keirafoxy/pen/JgdBVW) of cute coffee cup animated with pure css.<br>
