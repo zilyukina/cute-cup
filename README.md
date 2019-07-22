@@ -1,7 +1,9 @@
 # Pure CSS animation
 
 Good days start with coffee :) 
+
 Watch live [demo](https://codepen.io/keirafoxy/pen/JgdBVW) of cute coffee cup.
+
 *Based on [artwork by Parham Marandi](https://dribbble.com/shots/6473997-Cute-Cup).*
 ---------------------
 
